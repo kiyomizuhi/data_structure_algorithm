@@ -45,8 +45,11 @@ def function(A):
             return p1, hmax1, hmax2
         else:
             return p2, hmin1, hmin2
-        
-A = [-10, 6, 9, -2, -5, 3, 2, 10, 4]
-p, h1, h2 = function(A)
-print('Prod : {}\nMax : {} at {}\nMin : {} at {}'.format(p, A[h1], h1, A[h2], h2))
-print()
+
+def main():
+    A = [-10, 6, 9, -2, -5, 3, 2, 10, 4]
+    p, h1, h2 = function(A)
+    print('Prod : {}\nMax : {} at {}\nMin : {} at {}\n'.format(p, A[h1], h1, A[h2], h2))
+
+if __name__ == '__main__':
+    main()

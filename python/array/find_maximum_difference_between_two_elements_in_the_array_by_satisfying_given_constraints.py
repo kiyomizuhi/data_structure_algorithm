@@ -40,9 +40,12 @@ def function_traverse_from_left(A):
     
     return diff, hdmax, hdmin
 
-A = [2, 7, 9, 5, 1, 3, 5]
-diff, hdmax, hdmin = function_traverse_from_right(A)
-print('Dif : {}\nMax : {} at {}\nMin : {} at {}'.format(diff, A[hdmax], hdmax, A[hdmin], hdmin))
-print()
-diff, hdmax, hdmin = function_traverse_from_left(A)
-print('Dif : {}\nMax : {} at {}\nMin : {} at {}'.format(diff, A[hdmax], hdmax, A[hdmin], hdmin))
+def main():
+    A = [2, 7, 9, 5, 1, 3, 5]
+    diff, hdmax, hdmin = function_traverse_from_right(A)
+    print('Dif : {}\nMax : {} at {}\nMin : {} at {}\n'.format(diff, A[hdmax], hdmax, A[hdmin], hdmin))
+    diff, hdmax, hdmin = function_traverse_from_left(A)
+    print('Dif : {}\nMax : {} at {}\nMin : {} at {}\n'.format(diff, A[hdmax], hdmax, A[hdmin], hdmin))
+
+if __name__ == '__main__':
+    main()
